@@ -1,0 +1,75 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>LinkNYC Network Timeline</title>
+
+  <link href='https://api.mapbox.com/mapbox-gl-js/v0.44.1/mapbox-gl.css' rel='stylesheet' />
+  <link href="css/stylesCapstone.css" rel="stylesheet" >
+
+
+
+
+  <!--jquery js-->
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> -->
+  <!-- leaflet files -->
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.js"></script>
+
+  !--jQuery UI files-->
+  <!-- <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" /> -->
+  <!-- <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js" integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30=" crossorigin="anonymous"></script> -->
+  <!--jQuery UI Touch js, required for touchscreen use-->
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script> -->
+  <!--Leaflet Time-Slider plugin js;
+  find maintained version at https://github.com/geyerbri/LeafletSlider-->
+  <!-- <script src="js/SliderControl.js"></script> --> -->
+
+</head>
+
+<body>
+  <!-- <div class='container'> -->
+      <!-- <button class="button-79" id='white-percentage' role="button">Percentage White Population</button>
+      <button class="button-79" id='black-percentage' role="button">Percentage Black Population</button>
+      <button class="button-79" id='asian-percentage' role="button">Percentage Asian Population</button>
+      <button class="button-79" id='white-change' role="button">White Population Percentage Change</button>
+      <button class="button-79" id='black-change' role="button">Black Population Percentage Change</button> -->
+
+    <div id='mapContainer'>    </div>
+
+    <!-- this is where mapboxGL will insert the map -->
+    <div class="map-overlay top">
+        <div class="map-overlay-inner">
+        <h2>LinkNYC Kiosks</h2>
+        <label id="month"></label>
+        <input id="slider" type="range" min="2016" max="2022.33333" step="0.08333333333333333333" value="0">
+        </div>
+
+    </div>
+
+    <div class='legend2' id='features'><h2 class">Kiosk Status</h2>
+      <ul class="legend">
+      <li><span style="background-color: orange; border-radius: 50%;"></span> Installed</li>
+      <li><span style="background-color: green; border-radius: 50%;"></span> Active</li>
+  </ul>
+    <!-- <div class="legend-text"><div class="Legend-colorBox" style="background-color: orange;"></div><span>Active</span>
+    <div class="Legend-colorBox" style="background-color: green;"> </div>  </div> -->
+    </div>
+    <nav id="menu"></nav>
+
+
+  <!-- </div> -->
+  <!-- your content here... -->
+  <script src="https://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+  <script src='https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.js'></script>
+  <script
+  src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/numeral.js/2.0.6/numeral.min.js"></script>
+  <script src="js/scriptsCapstone.js"></script>
+</body>
+</html>
